@@ -1,1 +1,0 @@
-# platform-enablement-technical-test
