@@ -18,6 +18,8 @@ public class login extends HttpServlet {
 		
 		if(uname.equals("Robinjit"))
 		{
+			HttpSession session = request.getSession();
+			session.setAttribute("username", uname);
 			response.sendRedirect("ApplicationHealth.jsp");
 			
 		}

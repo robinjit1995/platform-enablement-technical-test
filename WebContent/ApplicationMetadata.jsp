@@ -1,18 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Application Health</title>
-</head>
-<body>
-	<%
-	if(session.getAttribute("username")==null)
-	{
-		response.sendRedirect("login.jsp");
-	}
-	%>
+    <head>
+                <title>Application Health</title>
+    </head>
+    <body>
+
         <%@ page import="java.io.IOException,java.net.URL,java.net.HttpURLConnection" %>
         <%
 
@@ -32,7 +24,7 @@
             op="NOK";
         }
             %>
-	Welcome ${username}
+
         <h2>Find your application health status</h2>
         <hr>
 
@@ -40,8 +32,6 @@
             <h4>Status Code: <span><%=  code %></span></h4>
             <h4>Status     : <span><%= op %></span></h4>
         </div>
-        <hr>
 
- <a href=="Application metadata.jsp">Application Metadata</a>
 </body>
 </html>
