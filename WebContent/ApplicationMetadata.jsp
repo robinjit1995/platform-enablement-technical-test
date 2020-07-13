@@ -1,37 +1,32 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
+<%@ page import="java.net.InetAddress" %>
 <!DOCTYPE html>
 <html>
-    <head>
-                <title>Application Health</title>
+    <head>     
+        <title>Application  - Metadata</title>
     </head>
     <body>
-
-        <%@ page import="java.io.IOException,java.net.URL,java.net.HttpURLConnection" %>
+        
         <%
-
-        String op;
-        URL url = new URL("http://google.com");
-        HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-        connection.setRequestMethod("GET");
-        connection.connect();
-
-        int code = connection.getResponseCode();
-        if (code==200)
-        {
-            op="OK";
-        }
-        else
-        {
-            op="NOK";
-        }
+            String hostName;
+            String serverName;
+            Date Time;
+            String Dtime;
+            hostName = InetAddress.getLocalHost().getHostName()+" with IP="+InetAddress.getLocalHost().getHostAddress()+"with IP=" +InetAddress.getLocalHost().getHostAddress()+" ";
+            Time = new Date();
+            Dtime = Time.toString();
             %>
-
-        <h2>Find your application health status</h2>
+        
+        <h2> Metadata  </h2>
         <hr>
-
+        
          <div>
-            <h4>Status Code: <span><%=  code %></span></h4>
-            <h4>Status     : <span><%= op %></span></h4>
+            <h4>Host Name & IP Address: <span><%=  hostName %></span></h4>
+            <h4> Date & Time: <span> <%= Dtime %> </h4>
         </div>
-
+        
+        <h4>HTTP Request URL : <span><%= request.getRequestURL() %></span></h4>
+        <h4>HTTP Request Method : <span><%= request.getMethod() %></span></h4>        
 </body>
 </html>
