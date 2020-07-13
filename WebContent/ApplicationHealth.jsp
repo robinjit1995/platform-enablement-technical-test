@@ -42,6 +42,6 @@
         </div>
         <hr>
 
- <a href=="ApplicationMetadata.jsp">Application Metadata</a>
+ <a href="ApplicationMetadata.jsp">Application Metadata</a>
 </body>
 </html>
