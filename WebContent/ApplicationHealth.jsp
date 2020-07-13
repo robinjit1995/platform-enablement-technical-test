@@ -17,7 +17,7 @@
         <%
 
         String op;
-        URL url = new URL("http://localhost:8081/index/");
+        URL url = new URL("http://3.25.99.241:8090/index/");
         HttpURLConnection connection = (HttpURLConnection)url.openConnection();
         connection.setRequestMethod("GET");
         connection.connect();
