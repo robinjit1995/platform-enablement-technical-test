@@ -17,7 +17,7 @@
         <%
 
         String op;
-        URL url = new URL("http://google.com");
+        URL url = new URL("http://localhost:8081/index/");
         HttpURLConnection connection = (HttpURLConnection)url.openConnection();
         connection.setRequestMethod("GET");
         connection.connect();
