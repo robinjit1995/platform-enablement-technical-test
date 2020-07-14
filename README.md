@@ -1,4 +1,5 @@
 Application Details
+
 The repository contains simple JAVASCRIPT application, that allows only username=”Robinjit” to login with no password. It has two functionalities where ApplicationHealth.jsp assists a health endpoint which returns an appropriate response code and ApplicationMetadata.jsp that returns metadata about the application hosting and is accompanied by junit testing.
 
 The application code is available at: https://github.com/robinjit1995/platform-enablement-technical-test/
@@ -6,6 +7,7 @@ The application code is available at: https://github.com/robinjit1995/platform-e
 Application is accessible at: http://3.25.99.241:8090/index/ and can be accessed with username: Robinjit. And the Jenkins pipeline can be accessed at : http://3.25.99.241:8080/job/Myob-assignment/
 
 Deployment Details
+
 The infrastructure is hosted on ec2 instance using AMI image:Amazon Linux 2 AMI (HVM), SSD Volume Type - ami-0a58e22c727337c51 (64-bit x86) / ami-0bc71ebe2a221089c (64-bit Arm) and below are the infrastructure requirements.
 
 Java: 1.8.0_141
