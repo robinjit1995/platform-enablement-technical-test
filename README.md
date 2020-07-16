@@ -17,7 +17,7 @@ Jenkins: Jenkins 2.244
 Eclipse: Version: 2020-06 (4.16.0)
 Git: git version 2.23.3.
 
-The application deployment is working via Jenkins pipeline and pipeline as code is available in Jenkinsfile that has 4 stages and builds application on each commit.
+The application deployment is working via Jenkins pipeline and pipeline as code is available in Jenkinsfile that has 4 stages and builds application on each commit via webhook : http://3.25.99.241:8080/github-webhook/  (push) that is enabled in github for the mentioned project.
 
 1.	Polling the SCM(checksout the application code from git repository)
 2.	Build(maven packages the artefact in *.war format)
