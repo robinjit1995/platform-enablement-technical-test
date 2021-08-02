@@ -11,6 +11,10 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet implementation class login
  */
+
+/**
+ * GOOGLE_URL
+ */
 @WebServlet("/login")
 public class login extends HttpServlet {
 
